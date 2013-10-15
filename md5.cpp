@@ -125,14 +125,13 @@ std::string hash(const std::string& _src) {
 	_c.i = C;
 	_d.i = D;
 	
-	char buf[16];
+	char buf[17];
 	::sprintf(buf, "%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x", 
 		_a.s[0], _a.s[1], _a.s[2], _a.s[3], 
 		_b.s[0], _b.s[1], _b.s[2], _b.s[3], 
 		_c.s[0], _c.s[1], _c.s[2], _c.s[3], 
 		_d.s[0], _d.s[1], _d.s[2], _d.s[3]
 	);
-	
 	return std::string(buf);
 }
 
