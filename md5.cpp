@@ -2,7 +2,6 @@
 #include <cmath>
 #include <cstdio>
 #include <md5.hpp>
-#include <iostream>
 
 namespace MD5 {
 const uint32_t BITS_PER_BYTE = 8;
@@ -145,7 +144,7 @@ int padding(const std::string *src, std::string* dst) {
 }
 
 int hash(const std::string* _src, std::string* dst) {
-		// for Step 2.
+	// for Step 2.
 	_UINT64_T src_size;
 	src_size.i = _src->length() * BITS_PER_BYTE;
 	
